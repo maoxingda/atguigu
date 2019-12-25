@@ -9,8 +9,8 @@ import java.io.IOException;
 import java.io.InputStream;
 
 public class SqlSessionUtil {
-    private static SqlSessionFactory sqlSessionFactory = null;
-    private static ThreadLocal<SqlSession> threadLocal = new ThreadLocal<SqlSession>();
+    private static final SqlSessionFactory sqlSessionFactory;
+    private static final ThreadLocal<SqlSession> threadLocal = new ThreadLocal<>();
 
     static {
         InputStream inputStream = null;

@@ -6,7 +6,7 @@ import org.apache.ibatis.session.SqlSession;
 
 import java.util.List;
 
-public class QueryCityTest {
+class QueryCityTest {
     public static void main(String[] args) {
         SqlSession sqlSession = SqlSessionUtil.getSqlSession();
         CityDao cityDao = sqlSession.getMapper(CityDao.class);
